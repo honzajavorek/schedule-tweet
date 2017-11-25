@@ -17,7 +17,7 @@ Only **Python 3.6** and higher is supported.
 Usage
 -----
 
-..code:: python
+.. code-block:: python
 
     >>> import os
     >>> from datetime import datetime, timedelta
@@ -38,7 +38,7 @@ Usage
 Tests
 -----
 
-Obviously, TweetDeck authors can change anything anytime, which may or may not break this tool. That's why it is tested by a `regular nightly Travis CI build <https://travis-ci.org/honzajavorek/schedule-tweet>`_. If it's able to schedule a tweet in the sample `@schedule_tw <https://twitter.com/schedule_tw>_` account, it assumes the tool still works and the build will pass. If the build badge is red, it means the tool doesn't work anymore and it needs to be updated.
+Obviously, TweetDeck authors can change anything anytime, which may or may not break this tool. That's why it is tested by a `regular nightly Travis CI build <https://travis-ci.org/honzajavorek/schedule-tweet>`_. If it's able to schedule a tweet in the sample `@schedule_tw <https://twitter.com/schedule_tw>`_ account, it assumes the tool still works and the build will pass. If the build badge is red, it means the tool doesn't work anymore and it needs to be updated.
 
 .. image:: https://travis-ci.org/honzajavorek/schedule-tweet.svg?branch=master
     :target: https://travis-ci.org/honzajavorek/schedule-tweet
