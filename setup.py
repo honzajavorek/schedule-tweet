@@ -11,7 +11,7 @@ except ImportError:
     print(message, file=sys.stderr)
 
 
-version = '0.0.0'
+version = '1.0.0'
 
 
 package_root = path.abspath(path.dirname(__file__))
