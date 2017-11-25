@@ -40,15 +40,16 @@ class Session():
 
             logger.info('opening left pane')
             app_page.open_left_pane(self.browser)
-
-            logger.info(f'selecting account: {self.username}')
-            app_page.select_account(self.browser, self.username)
         except Exception:
             self.browser.quit(self.screenshot_file)
             raise
 
-    def tweet(self, dt, text):
+    def tweet(self, dt, text, username=None):
+        username = username or self.username
         try:
+            logger.info(f'selecting account: {username}')
+            app_page.select_account(self.browser, username)
+
             logger.info('filling tweet text')
             app_page.fill_tweet_text(self.browser, text)
 

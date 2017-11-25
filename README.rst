@@ -35,6 +35,16 @@ Usage
     ...     dt = now_dt + timedelta(minutes=3)
     ...     session.tweet(dt, f'Second Tweet 💥 {dt.isoformat()}')
 
+Multiple Accounts
+-----------------
+
+If you have multiple accounts in your TweetDeck, you can specify the account to tweet from by ``session.tweet(dt, text, username='different_account')``. By default the tweet gets sent from the initial ``username``.
+
+Images
+------
+
+Not supported yet. Contribute! `This <https://stackoverflow.com/q/18823139/325365>`_ could help you. Note that scheduled tweets can have only one image (TweetDeck limitation).
+
 Tests
 -----
 
