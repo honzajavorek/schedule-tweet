@@ -100,5 +100,8 @@ ENV/
 # mypy
 .mypy_cache/
 
-# screenshots
+# Screenshots
 *.png
+
+# Geckodriver
+geckodriver*
