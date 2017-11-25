@@ -1,14 +1,14 @@
 Schedule Tweet
 ==============
 
-Automated tweet scheduling using TweetDeck. Uses `Selenium <http://docs.seleniumhq.org/>`_ to spawn a browser, log in to TweetDeck with your credentials, and schedule a tweet on your behalf by clicking on things in the app.
+Automated tweet scheduling using `TweetDeck <http://tweetdeck.twitter.com/>`_. Uses `Selenium <http://docs.seleniumhq.org/>`_ to spawn a browser, log in to TweetDeck with your credentials, and schedule a tweet on your behalf by clicking on things in the app.
 
 Installation
 ------------
 
 Install `geckodriver <https://github.com/mozilla/geckodriver>`_. On macOS with `Homebrew <http://homebrew.sh/>`_ you can use ``brew install geckodriver``. Then...
 
-..code:: shell
+.. code-block:: shell
 
     $ pip install schedule_tweet
 
@@ -46,6 +46,6 @@ Obviously, TweetDeck authors can change anything anytime, which may or may not b
 Why
 ---
 
-Twitter doesn't provide scheduling tweets in their API. It is provided only as a feature of `TweetDeck <http://tweetdeck.twitter.com/>`_, their advanced official client. Unlike other clients which support scheduling tweets, TweetDeck is free of charge, it is an official tool made by Twitter themselves, and it supports `teams <https://blog.twitter.com/official/en_us/a/2015/introducing-tweetdeck-teams.html>`_.
+Twitter doesn't provide tweets scheduling in `their API <https://developer.twitter.com/>`_. It is provided only as a feature of `TweetDeck <http://tweetdeck.twitter.com/>`_, their advanced official client. Unlike other clients which support tweets scheduling, TweetDeck is free of charge, it is an official tool made by Twitter themselves, and it supports `teams <https://blog.twitter.com/official/en_us/a/2015/introducing-tweetdeck-teams.html>`_.
 
 The ``schedule-tweet`` tool was originally built to save precious volunteering time of the `PyCon CZ 2017 <https://cz.pycon.org/2017/>`_ social media team.
