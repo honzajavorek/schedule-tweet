@@ -6,9 +6,10 @@ python:
 addons:
   firefox: "latest"
 env:
-  global:  # 'travis encrypt PYPI_PASSWORD=... GH_TOKEN=... PASSWORD=...'
+  global:
     - MOZ_HEADLESS=1
     - PYPI_USERNAME=honzajavorek
+    # 'travis encrypt PYPI_PASSWORD=... GH_TOKEN=... PASSWORD=...'
     - secure: "115rYd95VvurK+hYpRXhfBl6jG+6kMdATKWrxZMEw3N4DZ7RQOO56ZPOpfMpX16qMFtKpJQnrQvQylHDkA55ICdEjNdIiE3RaA2uQYb6I+DDxWR9qzwZlvm36D9XKaVbHCUXf/FR0FWzRH+RWBoXm23pPS+CbsZtVwF8jpXXDrtx1RlgPYlLVAjf7kdciDneHNDe7VVVXFBIJPeOpnbRtUQRjUDezYXBjs6aO8UD+6SdOTYbMT4yPVcYafbuSPybNYYLVKW2ing09VG90fnqSu20bqeGkOlGFsX2niC/1NxRthfsN1PV42TjLJCixaswJIZ6L95Ixt3bM7DkkCRUetZ5/uiaKMwl7z/Kic8FfA57Qn9KgNR/plp31113U70F8OgjeIlgBhsghoeCmU3Se6MzEKcr9wZ1FTzmwF+dobCW28uf2InU0H1YH2o5jQMTPTo6d11MUrKu36VJYE4k7ANs6X4Siq4zkG2R2KMFByxEHP9GyviHVA1BEnLh9CfQvWu9/LBDV32wi6Jk1vyrval7XuwgOfUtfocrHk5pQ2fTpCIWO3ZKUiR9CDP47FeWA2OoIgHD5O6+rXKWVd1hIE7Omf6vCZCs+Zww2ThSNGBOi6jCsoFPaWhlX1gtbNY1CFcto/J813YUtOt56ckT5vL48pLfW7r0GTsfRlxj+i0="
 before_install:
   - "wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz"
@@ -18,6 +19,6 @@ before_install:
 install:
   - "pip install -e .[tests,release]"
 script:
-  - "pylama *.py schedule_tweet && python test_nightly.py"
+  - "bash test_travis.sh"
 after_success:
   - "python setup.py publish"

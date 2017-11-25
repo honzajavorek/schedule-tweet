@@ -53,6 +53,8 @@ Obviously, TweetDeck authors can change anything anytime, which may or may not b
 .. image:: https://travis-ci.org/honzajavorek/schedule-tweet.svg?branch=master
     :target: https://travis-ci.org/honzajavorek/schedule-tweet
 
+The same tests run every time there is any change on the ``master`` branch.
+
 Why
 ---
 
