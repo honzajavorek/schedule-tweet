@@ -59,7 +59,7 @@ class Browser():
         logger.debug(f'is_visible {css_selector}')
         try:
             return bool(self._when_visible(css_selector))
-        except:
+        except Exception:
             return False
 
     def click(self, css_selector):
@@ -74,7 +74,8 @@ class Browser():
 
     def value(self, css_selector):
         logger.debug(f'value {css_selector}')
-        return self._when_clickable(css_selector).get_attribute('value').strip()
+        element = self._when_clickable(css_selector)
+        return element.get_attribute('value').strip()
 
     def submit(self, css_selector):
         logger.debug(f'submit {css_selector}')
@@ -83,18 +84,22 @@ class Browser():
 
     def scroll_to(self, css_selector):
         logger.debug(f'scroll_to {css_selector}')
-        self.driver.execute_script(f'document.querySelector("{css_selector}").scrollIntoView()')
+        script = f'document.querySelector("{css_selector}").scrollIntoView()'
+        self.driver.execute_script(script)
 
     def save_screenshot(self, path):
         logger.debug(f'save_screenshot {path}')
         self.driver.save_screenshot(path)
 
     def quit(self, screenshot_file=None):
-        with_screenshot = f'(screenshot: {screenshot_file})' if screenshot_file else ''
+        if screenshot_file:
+            with_screenshot = f'(screenshot: {screenshot_file})'
+        else:
+            with_screenshot = ''
         logger.debug(f'quit {with_screenshot}')
         try:
             if screenshot_file:
                 self.driver.save_screenshot(screenshot_file)
             self.driver.quit()
-        except:
+        except Exception:
             pass
