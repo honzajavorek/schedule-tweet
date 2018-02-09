@@ -60,4 +60,4 @@ Why
 
 Twitter doesn't provide tweets scheduling in `their API <https://developer.twitter.com/>`_. It is provided only as a feature of `TweetDeck <http://tweetdeck.twitter.com/>`_, their advanced official client. Unlike other clients which support tweets scheduling, TweetDeck is free of charge, it is an official tool made by Twitter themselves, and it supports `teams <https://blog.twitter.com/official/en_us/a/2015/introducing-tweetdeck-teams.html>`_.
 
-The ``schedule-tweet`` tool was originally built to save precious volunteering time of the `PyCon CZ 2017 <https://cz.pycon.org/2017/>`_ social media team.
+The ``schedule-tweet`` tool was originally built to save precious volunteering time of the `PyCon CZ <https://cz.pycon.org/>`_ social media team.
