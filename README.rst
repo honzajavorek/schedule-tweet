@@ -50,12 +50,15 @@ Tests
 
 Obviously, TweetDeck authors can change anything anytime, which may or may not break this tool. That's why it is tested by a `regular nightly Travis CI build <https://travis-ci.org/honzajavorek/schedule-tweet>`_. If it's able to schedule a tweet in the sample `@schedule_tw <https://twitter.com/schedule_tw>`_ account, it assumes the tool still works and the build will pass. If the build badge is red, it means the tool doesn't work anymore and it needs to be updated.
 
-I made the library to itch my own scratch. If it gets broken, there is some probability I'll need to use it, I'll fix it, and I'll release a new version. Otherwise I provide no support as I don't really have time to do proper maintenance of the project. I'll gladly review and accept Pull Requests though.
-
 .. image:: https://travis-ci.org/honzajavorek/schedule-tweet.svg?branch=master
     :target: https://travis-ci.org/honzajavorek/schedule-tweet
 
 The same tests run every time there is any change on the ``master`` branch.
+
+Maintenance
+-----------
+
+I made the library to itch my own scratch. If it gets broken, there is some probability I'll need to use it, I'll fix it, and I'll release a new version. Otherwise I provide no support as I don't really have time to do proper maintenance of the project. I'll gladly review and accept Pull Requests though.
 
 Why
 ---
