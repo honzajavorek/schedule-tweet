@@ -40,7 +40,7 @@ setup(
     keywords='tweet tweets twitter tweetdeck scheduling scheduler',
     packages=find_packages(exclude=['tests']),
     install_requires=[
-        'selenium~=3.5.0'
+        'selenium>=3.5,<3.142'
     ],
     extras_require={
         'tests': [
