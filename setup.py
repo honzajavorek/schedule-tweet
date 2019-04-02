@@ -44,7 +44,7 @@ setup(
     ],
     extras_require={
         'tests': [
-            'requests~=2.18.4',
+            'requests>=2.18.4,<2.22.0',
             'lxml>=4.1.1,<4.4.0',
             'cssselect~=1.0.1',
             'pytz>=2017.3',
