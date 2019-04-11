@@ -48,7 +48,7 @@ setup(
             'lxml>=4.1.1,<4.4.0',
             'cssselect~=1.0.1',
             'pytz>=2017.3',
-            'pylama>=7.4.3,<7.7.0',
+            'pylama>=7.4.3,<7.8.0',
         ],
         'release': [
             'python-semantic-release>=3.10.2,<4.2.0'
