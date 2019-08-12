@@ -46,7 +46,7 @@ setup(
         'tests': [
             'requests>=2.18.4,<2.23.0',
             'lxml>=4.1.1,<4.5.0',
-            'cssselect~=1.0.1',
+            'cssselect>=1.0.1,<1.2.0',
             'pytz>=2017.3',
             'pylama>=7.4.3,<7.8.0',
         ],
