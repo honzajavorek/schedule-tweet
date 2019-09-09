@@ -51,7 +51,7 @@ setup(
             'pylama>=7.4.3,<7.8.0',
         ],
         'release': [
-            'python-semantic-release>=3.10.2,<4.3.0'
+            'python-semantic-release>=3.10.2,<4.4.0'
         ],
     }
 )
